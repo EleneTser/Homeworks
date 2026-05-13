@@ -13,12 +13,11 @@
 // let filteredarrr = arr.filter((num) => num > 0).reduce((tot,curr) => tot + curr,0)
 // console.log(filteredarrr)
 
-// console.log(sumofpositives)
 
 //4) მოცემული სტრინგების მასივიდან წაშალე თითოეული სტრინგის ბოლო სიმბოლო
-let namesArr = ["giorgi","nika","mariami"]
-let mappedarr = namesArr.map((num) => num.slice(0,-1))
-console.log(mappedarr)
+// let namesArr = ["giorgi","nika","mariami"]
+// let mappedarr = namesArr.map((num) => num.slice(0,-1))
+// console.log(mappedarr)
 
 
 //5) გაამრავლე ყველა ელემენტი მასივში 2-ზე და შემდეგ ამოიღე რიცხვები, რომლებიც იყოფა 3-ზე
