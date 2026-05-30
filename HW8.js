@@ -96,3 +96,78 @@
 // console.log(word, count)
 
 //1)დაწერე ფუნქცია for loop-ის გამოყენებით, რომელიც დაითვლის რამდენჯერ გვხვდება კონკრეტული ასო მოცემულ სტრინგში. 
+
+// function countLetter(str, letter) {
+//     let count = 0
+
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === letter) {
+//             count++
+//         }
+//     }
+
+//     return count
+// }
+
+// console.log(countLetter("hello world", "l"))
+
+//2) დაწერე ფუნქცია, რომელიც შეამოწმებს არის თუ არა სტრინგი პალინდრომი (ეს სიტყვა თუ იკითხება ერთნაირად ესე იგი პალინდრომია.მაგალითად ana, abba,gig) 
+
+
+// function isPalindrome(str) {
+//     for (let i = 0; i < str.length / 2; i++) {
+//         if (str[i] !== str[str.length - 1 - i]) {
+//             return false
+//         }
+//     }
+//     return true;
+// }
+
+// console.log(isPalindrome("ana"))
+// console.log(isPalindrome("abba"))
+// console.log(isPalindrome("hello"))
+
+//3)შექმენი ფუნქცია, რომელიც მიიღებს ორ რიცხვების მასივს, გააერთიანებს მათ, წაშლის დუბლიკატებს და დაითვლის ჯამს. გამოიყენე მასივის მეთოდები და ლოგიკური ოპერატორები საჭიროებისამებრ.
+// function UniqueSum(arr1, arr2) {
+//     let merged = [...arr1, ...arr2]
+
+//     let unique = [...new Set(merged)]
+
+//     let sum = unique.reduce((tot, curr) => tot + curr, 0)
+
+//     return sum
+// }
+
+// console.log(UniqueSum([1, 2, 3], [3, 4, 5]))
+
+
+//  4)შექმენი ფუნქცია ფაქტორიალის დასათვლელად. 
+
+// function factorial(n) {
+//     let result = 1
+
+//     for (let i = 1; i <= n; i++) {
+//         result *= i
+//     }
+
+//     return result
+// }
+
+// console.log(factorial(5))
+
+//5)Two Sum - მოძებნე მასივში ის წყვილები, რომელთა ჯამიც უდრის მოცემულ რიცხვს ანუ [1,2,3,4,5,6,-7,-8] ამ მასივს და -15 თუ გადავცემთ მან უნდა დააბრუნოს [6,7]
+// function twoSum(arr, target) {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] + arr[j] === target) {
+//                 return [arr[i], arr[j]]
+//             }
+//         }
+//     }
+
+//     return []
+// }
+
+// let arr = [1, 2, 3, 4, 5, 6, -7, -8]
+
+// console.log(twoSum(arr, -15))
