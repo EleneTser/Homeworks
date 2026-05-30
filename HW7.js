@@ -1,37 +1,37 @@
 //1) შექმენი Triangle (სამკუთხედი) კლასი, რომელიც იღებს სამ გვერდს (a, b, c) და დაამატე მეთოდები: getPerimeter(), getArea() , isRightTriangle().
-class Triangle {
-    constructor(a, b, c){
-        this.a = a
-        this.b = b
-        this.c = c
-    }
+// class Triangle {
+//     constructor(a, b, c){
+//         this.a = a
+//         this.b = b
+//         this.c = c
+//     }
 
-    getPerimeter(){
-        console.log(this.a + this.b + this.c)
-    }
+//     getPerimeter(){
+//         console.log(this.a + this.b + this.c)
+//     }
 
-    getArea(){
-        let s = (this.a + this.b + this.c) / 2
-        let area = Math.sqrt(s * (s - this.a) * (s - this.b) * (s - this.c))
-        console.log(area)
-    }
+//     getArea(){
+//         let s = (this.a + this.b + this.c) / 2
+//         let area = Math.sqrt(s * (s - this.a) * (s - this.b) * (s - this.c))
+//         console.log(area)
+//     }
 
-    isRightTriangle(){
-        let sides = [this.a, this.b, this.c].sort((a,b) => a - b)
+//     isRightTriangle(){
+//         let sides = [this.a, this.b, this.c].sort((a,b) => a - b)
 
-        if(sides[0] ** 2 + sides[1] ** 2 === sides[2] ** 2){
-            console.log("მართკუთხა სამკუთხედია")
-        }else{
-            console.log("არ არის მართკუთხა")
-        }
-    }
-}
+//         if(sides[0] ** 2 + sides[1] ** 2 === sides[2] ** 2){
+//             console.log("მართკუთხა სამკუთხედია")
+//         }else{
+//             console.log("არ არის მართკუთხა")
+//         }
+//     }
+// }
 
-let triangle = new Triangle(3,4,5)
+// let triangle = new Triangle(3,4,5)
 
-triangle.getPerimeter()
-triangle.getArea()
-triangle.isRightTriangle()
+// triangle.getPerimeter()
+// triangle.getArea()
+// triangle.isRightTriangle()
 
 //2) შექმენი Smartphone (სმარტფონი) კლასი property-ებით: brand, model, releaseYear. გააკეთე ექსტენშენი GamingPhone, რომელსაც დაემატება gpuScore და batteryCapacity, და დაამატე მეთოდი performanceIndex().
 // class Smartphone{
